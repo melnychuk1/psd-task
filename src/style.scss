@@ -19,264 +19,264 @@ $width-md: 1170px;
 
 //Helpers
 %h-transition-25{
-     transition: all .25s ease-out;
+   transition: all .25s ease-out;
  }
 
 %btn-reset{
-     border: none;
-     outline: none;
-     padding: 0;
-     margin: 0;
-     background: transparent;
+   border: none;
+   outline: none;
+   padding: 0;
+   margin: 0;
+   background: transparent;
  }
 
 %input-reset{
-     border: none;
-     padding: 0;
-     margin: 0;
+   border: none;
+   padding: 0;
+   margin: 0;
  }
 
 %input-style{
-     font-family: "Fira Sans";
-     font-size: 18px;
-     font-weight: 700;
-     font-style: italic;
-     padding: 1px 3px;
+   font-family: "Fira Sans";
+   font-size: 18px;
+   font-weight: 700;
+   font-style: italic;
+   padding: 1px 3px;
  }
 
 %input-title{
-     display: block;
-     font-size: 12px;
-     font-weight: 400;
-     font-family: "Myriad Pro", sans-serif;
-     letter-spacing: .3px;
-     margin-bottom: 4px;
+   display: block;
+   font-size: 12px;
+   font-weight: 400;
+   font-family: "Myriad Pro", sans-serif;
+   letter-spacing: .3px;
+   margin-bottom: 4px;
  }
 
 input{
-&:focus{
+  &:focus{
      outline: none;
- }
+   }
 }
 
 *{
-    box-sizing: border-box;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 //Button
-  .button{
+.button{
   @extend %btn-reset;
-      width: 175px;
-      height: 63px;
-      box-shadow: 0 0 21px rgba(0, 0, 0, 0.09);
-      border-radius: 2px;
-      background-color: $color-primary;
-      text-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
-      color: $white;
-      font-family: "Proxima Nova", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.6px;
+  width: 175px;
+  height: 63px;
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  background-color: $color-primary;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
+  color: $white;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
 
-&--icon{
-     width: 35px;
-     height: 35px;
-     border-radius: 50%;
-     background-color: $orangeFD;
-     opacity: 0.58;
-     text-align: center;
-     margin-right: 20px;
- }
+  &--icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $orangeFD;
+    opacity: 0.58;
+    text-align: center;
+    margin-right: 20px;
+  }
 
-&__icon{
-     line-height: 1;
-     font-size: 18px;
- }
+  &__icon{
+    line-height: 1;
+    font-size: 18px;
+  }
 }
 
 //Container
   .container{
-      margin: 100px auto;
-      width: $width-sm;
+    margin: 100px auto;
+    width: $width-sm;
 
-@media screen and (min-width: $width-md){
+  @media screen and (min-width: $width-md){
     width: 100%;
     max-width: $width-md;
-}
+  }
 }
 
 //Order-block
   .order-block{
-      background: $white;
-      box-shadow: $shadow;
-      display: flex;
-      align-items: center;
-      padding: 15px 15px 15px 50px;
-      flex-wrap: wrap;
+    background: $white;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 50px;
+    flex-wrap: wrap;
 
-&__section{
-     display: flex;
-     padding: 0 28px;
-     position: relative;
-     align-items: center;
-     width: 50%;
+  &__section{
+    display: flex;
+    padding: 0 28px;
+    position: relative;
+    align-items: center;
+    width: 50%;
 
-&::before{
-     content: '';
-     width: 2px;
-     height: 32px;
-     background: $grayE4;
-     position: absolute;
-     left: 0;
-     top: 10px;
- }
+    &::before{
+      content: '';
+      width: 2px;
+      height: 32px;
+      background: $grayE4;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
 
-&--1,
-&--2{
-     margin-bottom: 20px;
- }
+    &--1,
+    &--2{
+      margin-bottom: 20px;
+    }
 
-&--1,
-&--3{
-     padding-left: 0;
+    &--1,
+    &--3{
+      padding-left: 0;
 
-&::before{
-     display: none;
- }
-}
+      &::before{
+        display: none;
+      }
+    }
 
-&--4{
-     justify-content: flex-end;
- }
-}
+    &--4{
+      justify-content: flex-end;
+    }
+  }
 
-@media screen and (min-width: $width-md){
+  @media screen and (min-width: $width-md){
     flex-wrap: no-wrap;
 
-&__section{
-&::before{
-     top: 5px;
- }
+    &__section{
+      &::before{
+        top: 5px;
+      }
 
-&--1,
-&--2{
-     margin-bottom: 0;
- }
+    &--1,
+    &--2{
+      margin-bottom: 0;
+    }
 
-&--1{
-     width: 230px;
- }
+    &--1{
+      width: 230px;
+    }
 
-&--2{
-     width: 380px;
- }
+    &--2{
+      width: 380px;
+    }
 
-&--3{
-     width: 260px;
-     padding: 0 28px;
+    &--3{
+      width: 260px;
+      padding: 0 28px;
 
-&::before{
-     display: block;
- }
-}
+      &::before{
+        display: block;
+      }
+    }
 
-&--4{
-     width: 230px;
-     justify-content: flex-end;
-     padding: 0;
+      &--4{
+        width: 230px;
+        justify-content: flex-end;
+        padding: 0;
 
-&::before{
-     display: none;
- }
-}
-}
-}
+        &::before{
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 //Input number
-  .input-number{
+.input-number{
       width: 33.3%;
 
-&__title{
- @extend %input-title;
- }
+  &__title{
+    @extend %input-title;
+  }
 
-&__control{
-     display: block;
-     position: relative;
-     display: inline-block;
- }
+  &__control{
+    display: block;
+    position: relative;
+    display: inline-block;
+  }
 
-&__control-field{
-     -moz-appearance: textfield;
-     -webkit-appearance: textfield;
-     appearance: textfield;
-     width: 30px;
-     margin: 0;
-     padding: 3px 0;
-     text-align: center;
-     font-size: 16px;
-     font-weight: 500;
-     color: $gray8b;
+  &__control-field{
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    width: 30px;
+    margin: 0;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray8b;
 
-&::-webkit-inner-spin-button,
-&::-webkit-outer-spin-button {
-     -webkit-appearance: none;
- }
-}
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  }
 
-&__control-buttons{
-     display: flex;
-     flex-direction: column;
- }
+  &__control-buttons{
+    display: flex;
+    flex-direction: column;
+  }
 
-&__control-btn{
- @extend %btn-reset;
-     color: $gray6b;
-     position: absolute;
-     right: -15px;
+  &__control-btn{
+    @extend %btn-reset;
+    color: $gray6b;
+    position: absolute;
+    right: -15px;
 
-&--up{
-     top: 0;
- }
+    &--up{
+      top: 0;
+    }
 
-&--down{
-     bottom: 0;
- }
+    &--down{
+      bottom: 0;
+    }
 
-&:active{
-     color: $color-primary;
- }
-}
+    &:active{
+      color: $color-primary;
+    }
+  }
 }
 
 //Input text
-  .input-text{
-      width: 100%;
+.input-text{
+  width: 100%;
 
-&__title{
- @extend %input-title;
- }
+  &__title{
+    @extend %input-title;
+  }
 
-&__field{
- @extend %input-reset;
- @extend %input-style;
- }
+  &__field{
+    @extend %input-reset;
+    @extend %input-style;
+  }
 }
 
 //Input date
-  .input-date{
-&__title{
- @extend %input-title;
- }
+.input-date{
+  &__title{
+    @extend %input-title;
+  }
 
-&__field{
- @extend %input-reset;
- @extend %input-style;
-     width: 100%;
-     max-width: 145px;
-     height: 27px;
- }
+  &__field{
+    @extend %input-reset;
+    @extend %input-style;
+    width: 100%;
+    max-width: 145px;
+    height: 27px;
+  }
 }
