@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Document</title>
+             <link rel="stylesheet" href="style/main.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="order-block">
+      <div class="order-block__section order-block__section--1">
+        <label class="input-text">
+          <span class="input-text__title">Номера</span>
+          <input type='text' class="input-text__field" placeholder='Введите здесь место'>
+        </label>
+      </div>
+      <div class="order-block__section order-block__section--2">
+        <label class="input-date">
+          <span class="input-date__title">Заезд</span>
+          <input type='text' class="input-date__field" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder='Дата заезда'>
+        </label>
+        <label class="input-date">
+          <span class="input-date__title">Выезд</span>
+          <input type='text' class="input-date__field" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder='Дата выезда'>
+        </label>
+      </div>
+      <div class="order-block__section order-block__section--3">
+        <label class="input-number">
+          <span class="input-number__title">Номера</span>
+          <span class='input-number__control'>
+            <input class="input-number__control-field" min="0" name="quantity" value="1" type="number">
+
+              <button class='input-number__control-btn input-number__control-btn--up' onclick="this.parentNode.querySelector('input[type=number]').stepDown()">&#9650;</button>
+              <button class='input-number__control-btn input-number__control-btn--down'  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">&#9660;</button>
+
+          </span>
+        </label>
+        <label class="input-number">
+          <span class="input-number__title">Взрослые</span>
+          <span class='input-number__control'>
+            <input class="input-number__control-field" min="0" name="quantity" value="1" type="number">
+
+              <button class='input-number__control-btn input-number__control-btn--up' onclick="this.parentNode.querySelector('input[type=number]').stepDown()">&#9650;</button>
+              <button class='input-number__control-btn input-number__control-btn--down'  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">&#9660;</button>
+
+          </span>
+        </label>
+        <label class="input-number">
+          <span class="input-number__title">Дети</span>
+          <span class='input-number__control'>
+            <input class="input-number__control-field" min="0" name="quantity" value="1" type="number">
+
+              <button class='input-number__control-btn input-number__control-btn--up' onclick="this.parentNode.querySelector('input[type=number]').stepDown()">&#9650;</button>
+              <button class='input-number__control-btn input-number__control-btn--down'  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">&#9660;</button>
+
+          </span>
+        </label>
+      </div>
+      <div class="order-block__section order-block__section--4">
+        <button class="button button--icon">
+          <span class="button__icon">+</span>
+
+        </button>
+        <button class="button">Найти</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
